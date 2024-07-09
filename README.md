@@ -1,5 +1,5 @@
 # Neural Dependency Parser
-This notebook contains my final project of the Natural Language Processing course (UniPD - academic year 2023/24) consisting in a neural transition-based parsing for dependency grammars with unlabelled dependencies. The arc-eager parsing algorithm and the static oracle traditionally used for this parser are described in [Section 2](https://aclanthology.org/C12-1059/).
+This notebook contains my final project of the Natural Language Processing course (DEI UniPD - academic year 2023/24) consisting in a neural transition-based parsing for dependency grammars with unlabelled dependencies. The arc-eager parsing algorithm and the static oracle traditionally used for this parser are described in [Section 2](https://aclanthology.org/C12-1059/).
 
 We were required to create a baseline model which used biLSTM for extracting features from the input words. Then we needed to develop a second model using BERT in place of the biLSTM. Since BERT assigns embeddings to each token derived using BPE, in order to derive embeddings for words that are split into several tokens, I just took the embedding of the left-most token for the word. I used Hugging Face library for the implementation and the training of biLSTM and for the implementation and the fine-tuning of BERT.
 
